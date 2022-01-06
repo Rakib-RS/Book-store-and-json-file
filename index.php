@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +14,7 @@
     $books = json_decode($booksJson, true);
     ?>
     <form action="./search.php" method="POST">
-        <input type="text" name="title">
+        <input type="text" name="title" placeholder="enter title">
         <input type="submit" value="Search">
     </form>
     <br>
