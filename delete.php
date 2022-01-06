@@ -6,6 +6,6 @@
         array_splice($books, $id, 1);
         //echo $books;
         file_put_contents('./books.json',json_encode($books));
-        header('Location:index.php');
+       // header('Location:index.php');
 
 ?>
