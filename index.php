@@ -40,7 +40,7 @@
                 <td><?php echo $book['available']; ?></td>
                 <td><?php echo $book['pages']; ?></td>
                 <td><?php echo $book['isbn']; ?></td>
-                <td> <a href="<?php echo $BASE_URL . '/' . 'delete.php?id=' . (int)($key +1); ?>">
+                <td> <a onclick="return confirm('Are you sure you want to delete this books')" href="<?php echo $BASE_URL . '/' . 'delete.php?id=' . (int)($key +1); ?>">
                         <button class="btn-delete">Delete</button>
                     </a>
                 </td>
