@@ -11,8 +11,7 @@
 
 <body>
   <form action="./save.php" method="POST">
-    <label for="id">ID:</label><br>
-    <input type="text" id="id" name="id" required><br>
+   
     <label for="lname">Title:</label><br>
     <input required type="text" id="lname" name="title" placeholder="Enter title of book"><br>
     <label for="author">Author:</label><br>
