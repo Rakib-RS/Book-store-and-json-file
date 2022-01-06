@@ -1,8 +1,7 @@
-<?php
-    $booksJson = file_get_contents('books.json');
+ooksJson = file_get_contents('books.json');
     $books = json_decode($booksJson, true);
         $id = $_GET['id'];
-        $id = $id -1;
+        $id = $id;
         array_splice($books, $id, 1);
         //echo $books;
         file_put_contents('./books.json',json_encode($books));
