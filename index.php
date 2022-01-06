@@ -40,7 +40,7 @@ include_once('config.php');
                 <td><?php echo $book['available']; ?></td>
                 <td><?php echo $book['pages']; ?></td>
                 <td><?php echo $book['isbn']; ?></td>
-                <td> <a href="<?php echo $BASE_URL . '/' . 'delete.php?id=' . (int)($key + 1); ?>">
+                <td> <a href="<?php echo $BASE_URL . '/' . 'delete.php?id=' . (int)($book['id']); ?>">
                         <button class="btn-delete">Delete</button>
                     </a>
                 </td>
