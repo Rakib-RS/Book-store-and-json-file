@@ -34,13 +34,13 @@ include_once('config.php');
         </tr>
         <?php foreach ($books as $key => $book) : ?>
             <tr>
-                <td><?php echo $book['id']; ?></td>
+                <td><?php echo $key+1; ?></td>
                 <td><?php echo $book['title']; ?></td>
                 <td><?php echo $book['author']; ?></td>
                 <td><?php echo $book['available']; ?></td>
                 <td><?php echo $book['pages']; ?></td>
                 <td><?php echo $book['isbn']; ?></td>
-                <td> <a href="<?php echo $BASE_URL . '/' . 'delete.php?id=' . (int)($book['id']); ?>">
+                <td> <a href="<?php echo $BASE_URL . '/' . 'delete.php?id=' . (int)($key +1); ?>">
                         <button class="btn-delete">Delete</button>
                     </a>
                 </td>
