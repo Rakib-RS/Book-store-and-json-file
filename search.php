@@ -37,7 +37,7 @@
         </tr>
         <?php foreach ($query as $key => $item) : ?>
             <tr>
-                <td><?php echo $item['id']; ?></td>
+                <td><?php echo $key +1; ?></td>
                 <td><?php echo $item['title']; ?></td>
                 <td><?php echo $item['author']; ?></td>
                 <td><?php echo $item['available']; ?></td>
